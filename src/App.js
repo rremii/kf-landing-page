@@ -1,6 +1,9 @@
 import logo from './assets/KF_Logo.svg';
 import NavBar from "./components/NavBar/NavBar";
 import css from './App.module.sass'
+import HeadlSepList from "./components/HeadlSepList/HeadlSepList";
+import HeroCenter from "./components/HeroCenter/HeroCenter";
+import ScrollDown from "./components/ScrollDown/ScrollDown";
 
 function App() {
     return (
@@ -10,8 +13,9 @@ function App() {
                 <NavBar/>
             </nav>
             <main>
-                <div></div>
-                <div></div>
+                <HeroCenter/>
+                <HeadlSepList/>
+                <ScrollDown/>
             </main>
 
         </div>

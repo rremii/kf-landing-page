@@ -1,0 +1,57 @@
+@import "src/sass/variables"
+
+.ScrollDown
+  background-color: #8C2B2B
+  height: 100%
+  min-width: 50rem
+  width: 100%
+  grid-column: 2/5
+  margin-top: 2%
+  position: relative
+  @include media-break(768px, max)
+    grid-column: 1/2
+    width: 70%
+
+  span
+    font-size: 5rem
+    font-family: Rationale
+
+  div
+    height: 1.67rem
+    position: absolute
+    transform: translate(-50%, -50%)
+
+  .whiteDiv
+    background-color: white
+  //////////////////////////////////////////////////////////////////////
+  .whiteDiv:nth-of-type(1)
+    transform: matrix(0.89, 0, 0.58, 1, 0, 0) translate(7%, 0%)
+    width: 40%
+    top: 35%
+    left: 0%
+
+  .whiteDiv:nth-of-type(2)
+    transform: matrix(0.89, 0, -0.59, 1, 0, 0) translate(-7%, 0%)
+    width: 40%
+    top: 35%
+    right: 0%
+  //////////////////////////////////////////////////////////////////////
+  .whiteDiv:nth-of-type(3)
+    transform: translate(-50%, 0%) rotate(55.5deg) matrix(1, 0, 0.58, 1, 0, 0)
+    width: 20%
+    width: calc(10rem + 6.2vw)
+    left: 44.7%
+    top: 72%
+
+  .whiteDiv:nth-of-type(4)
+    //transform: translate(50%, -50%) rotate(-55.5deg) matrix(1, 0, -0.58, 1, 0, 0)
+    //width: calc(10rem + 6.2vw)
+    //width: 20%
+    //right: 44.7%
+    //top: 72%
+    transform: rotateY(180deg) rotateZ(55.5deg) matrix(1, 0, 0.58, 1, 0, 0)
+    width: 20%
+    width: calc(10rem + 6.2vw)
+    left: 45.1%
+    top: 72%
+

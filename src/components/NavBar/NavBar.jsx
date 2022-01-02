@@ -6,6 +6,7 @@ const NavBar = () => {
             <span>Monitor</span>
             <span>Team</span>
             <span>Testimonials</span>
+            <div></div>
         </div>
         <span className={css.contacts}>Contact</span>
     </div>

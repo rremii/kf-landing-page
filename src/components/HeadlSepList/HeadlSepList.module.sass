@@ -1,0 +1,32 @@
+@import "src/sass/variables"
+
+.HeadlSepList
+  background: linear-gradient(297deg, rgba(51, 58, 68, 0.5) -7.62%, rgba(51, 58, 68, 0.1) 115.01%)
+  //height: 50vh
+
+  width: 100%
+  grid-column: 4/6
+  display: grid
+  grid-template-rows: 1fr 4fr
+  font-family: Ropa Sans
+  font-weight: 400
+  @include media-break(768px, max)
+    grid-column: 1/2
+    width: 70%
+  h1
+    display: flex
+    align-items: center
+    justify-content: center
+    color: white
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0.72)
+    font-size: calc(1.5rem + 3.5vw)
+  div
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    align-items: flex-start
+    padding: 5% 10%
+    p
+      font-size: 4rem
+      margin: 0 5%
+
