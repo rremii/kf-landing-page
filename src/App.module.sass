@@ -8,6 +8,8 @@
   padding-right: 5.5%
   background-repeat: no-repeat
   background-size: cover
+  @include media-break(768px, max)
+    padding-right: 0
 
   nav
     width: 100%
@@ -22,13 +24,18 @@
   main
     margin-top: 5rem
     display: grid
-    grid-template-columns: 1.5fr 5fr 0fr minmax(8rem, 1fr) minmax(18rem, 1.5fr)
+    //grid-template-columns: 1.5fr 5fr 0fr minmax(8rem, 1fr) minmax(18rem, 1.5fr)
+    grid-template-columns: 7.5fr  minmax(26rem, 2.5fr)
     grid-template-rows: 50vh 25vh
-    padding-left: calc(10vw)
-
+    padding-left: 10vw
+    justify-items: center
     color: white
+    @include media-break(1024px, max)
+      padding-left: 5vw
+
     @include media-break(768px, max)
       justify-items: center
-      padding-left: calc(5.5vw)
+      margin-top: 5vh
+      padding-left: 0
       grid-template-columns: 1fr
       grid-template-rows: 1fr 1fr 1fr
